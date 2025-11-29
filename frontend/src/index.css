@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-x5green: #4CAF50;
+  --color-x5green-dark: #388E3C;
+  --font-sans: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+:root {
+  font-family: var(--font-sans);
+}
+
+body {
+  @apply bg-gray-50 text-gray-900;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Custom Scrollbar for the map if needed */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
